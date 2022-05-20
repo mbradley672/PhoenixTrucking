@@ -1,8 +1,16 @@
-﻿using Data.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Data.Models;
 
-namespace Data.DbContext {
-    public class ApplicationDbContext : Microsoft.EntityFrameworkCore.DbContext {
+// To learn more about WinUI, the WinUI project structure,
+// and more about our project templates, see: http://aka.ms/winui-project-info.
+
+namespace DataLayer {
+    public class ApplicationDbContext : DbContext {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             optionsBuilder.UseSqlite(@"Data Source=pfs.db");
 

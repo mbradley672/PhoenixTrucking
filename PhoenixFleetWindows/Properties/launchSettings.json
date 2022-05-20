@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PhoenixFleetWindows (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PhoenixFleetWindows (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
