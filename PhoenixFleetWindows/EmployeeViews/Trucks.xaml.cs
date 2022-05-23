@@ -12,28 +12,17 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using PhoenixFleetWindows.EmployeeViews;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace PhoenixFleetWindows {
+namespace PhoenixFleetWindows.EmployeeViews {
     /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainWindow : Window {
-        public MainWindow() {
+    public sealed partial class Trucks : Page {
+        public Trucks() {
             this.InitializeComponent();
         }
-
-        private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args) {
-            
-        }
-
-        private void NavigationView_OnLoaded(object sender, RoutedEventArgs e) {
-            ContentFrame.Navigate(typeof(Trucks));
-        }
-        
     }
 }
-
